@@ -146,11 +146,10 @@
                                 <li>4. 예산 및 일정</li>
                                 <li>5. 미팅</li>
                                 <li>6. 모집 요건</li>
-                                <li>7. 추가 정보</li>
                             </ul>
                         </dd>
-                        <dd><a href="">회원가입</a></dd>
-                        <dd><a href="">프로젝트 등록 완료</a></dd>
+                        <dd>회원가입</dd>
+                        <dd>프로젝트 등록 완료</dd>
                     </dl>
                 </div>
     
@@ -161,7 +160,6 @@
                     <div class="sub_content_box">
     
                         <div class="project_add">
-
                             <dl>
                                 <dt>프로젝트 제목<span>*</span></dt>
                                 <dd>
@@ -233,269 +231,14 @@
                                     </div>
                                 </dd>
                             </dl>
-                            <dl>
-                                <dt>프로젝트 진행 분류<span>*</span></dt>
-                                <dd>
-                                    <div class="rdo_box type_2">
-                                        <span>
-                                            <input type="radio" id="radio_01" name="rdo_group_01" checked>
-                                            <label for="radio_01">신규 프로젝트</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="radio_02" name="rdo_group_01">
-                                            <label for="radio_02">운영 서비스 리뉴얼 또는 유지보수</label>
-                                        </span>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>기획 상태<span>*</span></dt>
-                                <dd class="sub_tit">업무 범위 산정과 예산 및 일정 상담을 위해 현재 기획 상태를 선택해 주세요.</dd>
-                                <dd>
-                                    <div class="rdo_box type_2">
-                                        <span>
-                                            <input type="radio" id="chk_0001" name="rdo_group_02" checked>
-                                            <label for="chk_0001">아이디어만 있습니다.</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_0002" name="rdo_group_02">
-                                            <label for="chk_0002">필요한 내용들을 간단히 정리해두었습니다.</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_0003" name="rdo_group_02">
-                                            <label for="chk_0003">상세한 기획 문서가 존재합니다.</label>
-                                        </span>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>프로젝트 관련 자료<span>*</span></dt>
-                                <dd class="sub_tit">
-                                    아이디어 또는 필요한 내용을 정리한 문서를 추가해 주세요.<br/>
-                                    프로젝트 예산 및 일정 산정에 활용되며, 문서 및 이미지 파일만 추가 가능합니다.
-                                </dd>
-                                <dd>
-                                    <div class="form_box_group file_group">
-                                        <div class="form_box file_box">
-                                            <input type="file" id="file_inp" class="file_inp">
-                                            <input type="text" class="file_txt">
-                                            <label for="file_inp">업로드</label>
-                                        </div>
-                                        <span class="txt">최대 40MB까지 첨부 가능합니다.</span>
-                                        <div class="file_list">
-                                            <ul>
-                                                <li><span>파일이름.jpg</span><button>삭제</button></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>상세 업무 내용<span>*</span></dt>
-                                <dd class="sub_tit">
-                                    업무 내용을 상세하게 작성해주실수록, 더 적합한 파트너를 만날 수 있습니다.<br/>
-                                    파트너가 알아야 할 유의사항(필수 사항, 전문 경험 등)도 함께 작성해 주세요.
-                                </dd>
-                                <dd>
-                                    <div class="form_box">
-                                        <textarea>
-<프로젝트의 현재 상황>
-예시) 디자인 준비 상황, 진행 계획 등
-
-<상세한 업무 내용>
-예시) 페이지 수, 레이아웃(비슷한 페이지) 수, 반응형 여부 등
-
-<참고자료 / 유의사항>
-예시) 참고사이트, 기타 유의사항 등
-                                        </textarea>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>지출 가능 예산<span>*</span></dt>
-                                <dd class="sub_tit">프로젝트에 지출 가능한 예산을 입력해 주세요.</dd>
-                                <dd>
-                                    <div class="form_box min won">
-                                        <input type="text" id="won">
-                                        <label for="won"></label>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>예상 시작일<span>*</span></dt>
-                                <dd class="sub_tit">
-                                    파트너가 프로젝트에 착수하는 날짜입니다.<br/>
-                                    해당 날짜에 프로젝트 시작이 가능한 파트너들이 지원하게 됩니다.
-                                </dd>
-                                <dd>
-                                    <div class="form_box_group rdo_col">
-                                        <div class="rdo_inp type_2">
-                                            <div class="rdo_box">
-                                                <span>
-                                                    <input type="radio" id="radio_011" name="rdo_group_011" checked>
-                                                    <label for="radio_011">&nbsp;</label>
-                                                </span>
-                                            </div>
-                                            <div class="form_box min datepicker_inp">
-                                                <input type="text" id="" class="datepicker_day">
-                                            </div>
-                                        </div>
-                                        <div class="rdo_box type_2">
-                                            <span>
-                                                <input type="radio" id="radio_012" name="rdo_group_011">
-                                                <label for="radio_012">계약 체결 이후, 즉시 시작하길 희망합니다.</label>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>예상 진행 기간<span>*</span></dt>
-                                <dd class="sub_tit">더 적합한 파트너가 프로젝트를 찾고 지원할 수 있도록 프로젝트와 관련된 기술을 입력해주세요.</dd>
-                                <dd>
-                                    <div class="form_box day min">
-                                        <input type="text" id="day">
-                                        <label for="day">일</label>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>사전 미팅 방식<span>*</span></dt>
-                                <dd class="sub_tit">코드메이츠가 클라이언트님에게 편한 미팅 방식으로 파트너와의 미팅 조율을 도와드립니다.</dd>
-                                <dd>
-                                    <div class="rdo_box type_2">
-                                        <span>
-                                            <input type="radio" id="chk_00011" name="rdo_group_03" checked>
-                                            <label for="chk_00011">온라인(카카오톡, 화상미팅 등)</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_00022" name="rdo_group_03">
-                                            <label for="chk_00022">오프라인</label>
-                                        </span>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>진행 중 미팅<span>*</span></dt>
-                                <dd class="sub_tit">미팅 방식<span>*</span></dd>
-                                <dd>
-                                    <div class="rdo_box type_2">
-                                        <span>
-                                            <input type="radio" id="chk_00001" name="rdo_group_04" checked>
-                                            <label for="chk_00001">온라인(카카오톡, 화상미팅 등)</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_00002" name="rdo_group_04">
-                                            <label for="chk_00002">오프라인</label>
-                                        </span>
-                                    </div>
-                                </dd>
-                                <dd class="sub_tit">미팅 주기<span>*</span></dd>
-                                <dd>
-                                    <div class="rdo_box type_2">
-                                        <span>
-                                            <input type="radio" id="chk_00003" name="rdo_group_05" checked>
-                                            <label for="chk_00003">주 2회</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_00004" name="rdo_group_05">
-                                            <label for="chk_00004">주 1회</label>
-                                        </span>
-                                        <span>
-                                            <input type="radio" id="chk_00005" name="rdo_group_05">
-                                            <label for="chk_00005">필요시 요청</label>
-                                        </span>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>클라이언트 위치<span>*</span></dt>
-                                <dd class="sub_tit">파트너가 미팅 위치 선정시 클라이언트님의 위치를 참고합니다.</dd>
-                                <dd>
-                                    <div class="form_box_group rdo_rdo">
-                                        <div class="form_box">
-                                            <select>
-                                                <option value="">시/도</option>
-                                            </select>
-                                        </div>
-                                        <div class="form_box">
-                                            <select>
-                                                <option value="">시/군/구</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>지원자 모집 마감일<span>*</span></dt>
-                                <dd class="sub_tit">
-                                    지원자를 모집하는 기간은 최대 14일까지 가능합니다.<br/>
-                                    지원자 모집 기간 중에도 파트너 선정과 계약 진행이 가능합니다.
-                                </dd>
-                                <dd>
-                                    <div class="form_box min datepicker_inp">
-                                        <input type="text" id="" class="datepicker_day" placeholder="가능 일자 선택">
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>지원사업 여부<span>*</span></dt>
-                                <dd>
-                                    
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>지원자 필수 요건</dt>
-                                <dd class="sub_tit">아래 조건에 맞는 파트너를 지원자로 받습니다.</dd>
-                                <dd>
-                                    <div class="form_box_group rdo_col">
-                                        <div class="chk_box">
-                                            <span>
-                                                <input type="checkbox" id="c_012">
-                                                <label for="c_012">개인 또는 팀 가능</label>
-                                            </span>
-                                        </div>
-                                        <div class="chk_box">
-                                            <span>
-                                                <input type="checkbox" id="c_012">
-                                                <label for="c_012">사업자 가능 (세금계산서 발행)</label>
-                                            </span>
-                                        </div>
-                                        <div class="chk_box">
-                                            <span>
-                                                <input type="checkbox" id="c_012">
-                                                <label for="c_012">업력 1년 이상 (사업자등록증 기준)</label>
-                                            </span>
-                                        </div>
-                                        <div class="chk_box">
-                                            <span>
-                                                <input type="checkbox" id="c_012">
-                                                <label for="c_012">보증보험 발급 가능</label>
-                                            </span>
-                                        </div>
-                                        <div class="chk_inp">
-                                            <div class="chk_box">
-                                                <span>
-                                                    <input type="checkbox" id="c_013">
-                                                    <label for="c_013">&nbsp;</label>
-                                                </span>
-                                            </div>
-                                            <div class="form_box max">
-                                                <input type="text" id="" placeholder="기타(직접입력)">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
-
                         </div>
 
                         <div class="btn_group justify_content mt50">
                             <div class="btn_box">
-                                <a href="" class="btn_gray">이전</a>
+                                <!-- <a href="" class="btn_gray">이전</a> -->
                             </div>
                             <div class="btn_box">
-                                <a href="" class="btn_blue">다음</a>
+                                <a href="./ht-0102.html" class="btn_blue">다음</a>
                             </div>
                         </div>
     

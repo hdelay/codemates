@@ -139,15 +139,14 @@
                         </dt>
                         <dd class="on">
                             <a href="">프로젝트 정보 등록</a>
-                            <!-- <ul>
-                                <li class="on">1. 기본정보</li>
+                            <ul>
+                                <li>1. 기본정보</li>
                                 <li>2. 준비상태</li>
                                 <li>3. 프로젝트 상세</li>
                                 <li>4. 예산 및 일정</li>
                                 <li>5. 미팅</li>
-                                <li>6. 모집 요건</li>
-                                <li>7. 추가 정보</li>
-                            </ul> -->
+                                <li class="on">6. 모집 요건</li>
+                            </ul>
                         </dd>
                         <dd>회원가입</dd>
                         <dd>프로젝트 등록 완료</dd>
@@ -160,32 +159,70 @@
     
                     <div class="sub_content_box">
     
-                        <div class="project_info_main">
-                            <div class="info_main_cont outsourcing">
-                                <div class="img"></div>
-                                <strong>외주(도급)</strong>
-                                <span>
-                                    정해진 결과물을 납품받고 싶습니다.
-                                    <em>예) B2B 미디어 커머스 모바일 플랫폼 구축</em>
-                                </span>
-                                <a href="./ht-0101.html">외주(도급) 의뢰하기</a>
+                        <div class="project_add">
+                            <dl>
+                                <dt>지원자 모집 마감일<span>*</span></dt>
+                                <dd class="sub_tit">
+                                    지원자를 모집하는 기간은 최대 14일까지 가능합니다.<br/>
+                                    지원자 모집 기간 중에도 파트너 선정과 계약 진행이 가능합니다.
+                                </dd>
+                                <dd>
+                                    <div class="form_box min datepicker_inp">
+                                        <input type="text" id="" class="datepicker_day" placeholder="가능 일자 선택">
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>지원자 필수 요건</dt>
+                                <dd class="sub_tit">아래 조건에 맞는 파트너를 지원자로 받습니다.</dd>
+                                <dd>
+                                    <div class="form_box_group rdo_col">
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="c_012">
+                                                <label for="c_012">개인 또는 팀 가능</label>
+                                            </span>
+                                        </div>
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="c_012">
+                                                <label for="c_012">사업자 가능 (세금계산서 발행)</label>
+                                            </span>
+                                        </div>
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="c_012">
+                                                <label for="c_012">업력 1년 이상 (사업자등록증 기준)</label>
+                                            </span>
+                                        </div>
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="c_012">
+                                                <label for="c_012">보증보험 발급 가능</label>
+                                            </span>
+                                        </div>
+                                        <div class="chk_inp">
+                                            <div class="chk_box">
+                                                <span>
+                                                    <input type="checkbox" id="c_013">
+                                                    <label for="c_013">&nbsp;</label>
+                                                </span>
+                                            </div>
+                                            <div class="form_box max">
+                                                <input type="text" id="" placeholder="기타(직접입력)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="btn_group justify_content mt50">
+                            <div class="btn_box">
+                                <a href="./ht-0105.html" class="btn_gray">이전</a>
                             </div>
-        
-                            <div class="info_main_cont fixed_term">
-                                <div class="img"></div>
-                                <strong>기간제(상주)</strong>
-                                <span>
-                                    정해진 기간 동안 근무할 인력이 필요합니다.
-                                    <em>예) 6개월간 근무하는 시니어 백엔드 개발자</em>
-                                </span>
-                                <a href="./ht-0101.html">기간제(상주) 의뢰하기</a>
-                            </div>
-        
-                            <div class="txt_box">
-                                <ul>
-                                    <li>약속된 작업 범위의 업무를 수행하고, 정해진 기간 내 결과물을 받아야 한다면 외주(도급)를 선택해주세요.</li>
-                                    <li>근무해야 하는 시간과 장소가 정해져 있고, 일정 기간 동안 인력이 필요한 경우엔 기간제(상주)를 선택해주세요.</li>
-                                </ul>
+                            <div class="btn_box">
+                                <a href="" class="btn_blue">프로젝트 정보 등록 완료</a>
                             </div>
                         </div>
     

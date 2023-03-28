@@ -139,15 +139,14 @@
                         </dt>
                         <dd class="on">
                             <a href="">프로젝트 정보 등록</a>
-                            <!-- <ul>
-                                <li class="on">1. 기본정보</li>
+                            <ul>
+                                <li>1. 기본정보</li>
                                 <li>2. 준비상태</li>
                                 <li>3. 프로젝트 상세</li>
-                                <li>4. 예산 및 일정</li>
+                                <li class="on">4. 예산 및 일정</li>
                                 <li>5. 미팅</li>
                                 <li>6. 모집 요건</li>
-                                <li>7. 추가 정보</li>
-                            </ul> -->
+                            </ul>
                         </dd>
                         <dd>회원가입</dd>
                         <dd>프로젝트 등록 완료</dd>
@@ -160,32 +159,63 @@
     
                     <div class="sub_content_box">
     
-                        <div class="project_info_main">
-                            <div class="info_main_cont outsourcing">
-                                <div class="img"></div>
-                                <strong>외주(도급)</strong>
-                                <span>
-                                    정해진 결과물을 납품받고 싶습니다.
-                                    <em>예) B2B 미디어 커머스 모바일 플랫폼 구축</em>
-                                </span>
-                                <a href="./ht-0101.html">외주(도급) 의뢰하기</a>
+                        <div class="project_add">
+                            <dl>
+                                <dt>지출 가능 예산<span>*</span></dt>
+                                <dd class="sub_tit">프로젝트에 지출 가능한 예산을 입력해 주세요.</dd>
+                                <dd>
+                                    <div class="form_box min won">
+                                        <input type="text" id="won">
+                                        <label for="won"></label>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>예상 시작일<span>*</span></dt>
+                                <dd class="sub_tit">
+                                    파트너가 프로젝트에 착수하는 날짜입니다.<br/>
+                                    해당 날짜에 프로젝트 시작이 가능한 파트너들이 지원하게 됩니다.
+                                </dd>
+                                <dd>
+                                    <div class="form_box_group rdo_col">
+                                        <div class="rdo_inp type_2">
+                                            <div class="rdo_box">
+                                                <span>
+                                                    <input type="radio" id="radio_011" name="rdo_group_011" checked>
+                                                    <label for="radio_011">&nbsp;</label>
+                                                </span>
+                                            </div>
+                                            <div class="form_box min datepicker_inp">
+                                                <input type="text" id="" class="datepicker_day">
+                                            </div>
+                                        </div>
+                                        <div class="rdo_box type_2">
+                                            <span>
+                                                <input type="radio" id="radio_012" name="rdo_group_011">
+                                                <label for="radio_012">계약 체결 이후, 즉시 시작하길 희망합니다.</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>예상 진행 기간<span>*</span></dt>
+                                <dd class="sub_tit">더 적합한 파트너가 프로젝트를 찾고 지원할 수 있도록 프로젝트와 관련된 기술을 입력해주세요.</dd>
+                                <dd>
+                                    <div class="form_box day min">
+                                        <input type="text" id="day">
+                                        <label for="day">일</label>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="btn_group justify_content mt50">
+                            <div class="btn_box">
+                                <a href="./ht-0103.html" class="btn_gray">이전</a>
                             </div>
-        
-                            <div class="info_main_cont fixed_term">
-                                <div class="img"></div>
-                                <strong>기간제(상주)</strong>
-                                <span>
-                                    정해진 기간 동안 근무할 인력이 필요합니다.
-                                    <em>예) 6개월간 근무하는 시니어 백엔드 개발자</em>
-                                </span>
-                                <a href="./ht-0101.html">기간제(상주) 의뢰하기</a>
-                            </div>
-        
-                            <div class="txt_box">
-                                <ul>
-                                    <li>약속된 작업 범위의 업무를 수행하고, 정해진 기간 내 결과물을 받아야 한다면 외주(도급)를 선택해주세요.</li>
-                                    <li>근무해야 하는 시간과 장소가 정해져 있고, 일정 기간 동안 인력이 필요한 경우엔 기간제(상주)를 선택해주세요.</li>
-                                </ul>
+                            <div class="btn_box">
+                                <a href="./ht-0105.html" class="btn_blue">다음</a>
                             </div>
                         </div>
     

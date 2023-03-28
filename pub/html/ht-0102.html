@@ -139,15 +139,14 @@
                         </dt>
                         <dd class="on">
                             <a href="">프로젝트 정보 등록</a>
-                            <!-- <ul>
-                                <li class="on">1. 기본정보</li>
-                                <li>2. 준비상태</li>
+                            <ul>
+                                <li>1. 기본정보</li>
+                                <li class="on">2. 준비상태</li>
                                 <li>3. 프로젝트 상세</li>
                                 <li>4. 예산 및 일정</li>
                                 <li>5. 미팅</li>
                                 <li>6. 모집 요건</li>
-                                <li>7. 추가 정보</li>
-                            </ul> -->
+                            </ul>
                         </dd>
                         <dd>회원가입</dd>
                         <dd>프로젝트 등록 완료</dd>
@@ -160,32 +159,72 @@
     
                     <div class="sub_content_box">
     
-                        <div class="project_info_main">
-                            <div class="info_main_cont outsourcing">
-                                <div class="img"></div>
-                                <strong>외주(도급)</strong>
-                                <span>
-                                    정해진 결과물을 납품받고 싶습니다.
-                                    <em>예) B2B 미디어 커머스 모바일 플랫폼 구축</em>
-                                </span>
-                                <a href="./ht-0101.html">외주(도급) 의뢰하기</a>
+                        <div class="project_add">
+                            <dl>
+                                <dt>프로젝트 진행 분류<span>*</span></dt>
+                                <dd>
+                                    <div class="rdo_box type_2">
+                                        <span>
+                                            <input type="radio" id="radio_01" name="rdo_group_01" checked>
+                                            <label for="radio_01">신규 프로젝트</label>
+                                        </span>
+                                        <span>
+                                            <input type="radio" id="radio_02" name="rdo_group_01">
+                                            <label for="radio_02">운영 서비스 리뉴얼 또는 유지보수</label>
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>기획 상태<span>*</span></dt>
+                                <dd class="sub_tit">업무 범위 산정과 예산 및 일정 상담을 위해 현재 기획 상태를 선택해 주세요.</dd>
+                                <dd>
+                                    <div class="rdo_box type_2">
+                                        <span>
+                                            <input type="radio" id="chk_0001" name="rdo_group_02" checked>
+                                            <label for="chk_0001">아이디어만 있습니다.</label>
+                                        </span>
+                                        <span>
+                                            <input type="radio" id="chk_0002" name="rdo_group_02">
+                                            <label for="chk_0002">필요한 내용들을 간단히 정리해두었습니다.</label>
+                                        </span>
+                                        <span>
+                                            <input type="radio" id="chk_0003" name="rdo_group_02">
+                                            <label for="chk_0003">상세한 기획 문서가 존재합니다.</label>
+                                        </span>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>프로젝트 관련 자료<span>*</span></dt>
+                                <dd class="sub_tit">
+                                    아이디어 또는 필요한 내용을 정리한 문서를 추가해 주세요.<br/>
+                                    프로젝트 예산 및 일정 산정에 활용되며, 문서 및 이미지 파일만 추가 가능합니다.
+                                </dd>
+                                <dd>
+                                    <div class="form_box_group file_group">
+                                        <div class="form_box file_box">
+                                            <input type="file" id="file_inp" class="file_inp">
+                                            <input type="text" class="file_txt">
+                                            <label for="file_inp">업로드</label>
+                                        </div>
+                                        <span class="txt">최대 40MB까지 첨부 가능합니다.</span>
+                                        <div class="file_list">
+                                            <ul>
+                                                <li><span>파일이름.jpg</span><button>삭제</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="btn_group justify_content mt50">
+                            <div class="btn_box">
+                                <a href="./ht-0101.html" class="btn_gray">이전</a>
                             </div>
-        
-                            <div class="info_main_cont fixed_term">
-                                <div class="img"></div>
-                                <strong>기간제(상주)</strong>
-                                <span>
-                                    정해진 기간 동안 근무할 인력이 필요합니다.
-                                    <em>예) 6개월간 근무하는 시니어 백엔드 개발자</em>
-                                </span>
-                                <a href="./ht-0101.html">기간제(상주) 의뢰하기</a>
-                            </div>
-        
-                            <div class="txt_box">
-                                <ul>
-                                    <li>약속된 작업 범위의 업무를 수행하고, 정해진 기간 내 결과물을 받아야 한다면 외주(도급)를 선택해주세요.</li>
-                                    <li>근무해야 하는 시간과 장소가 정해져 있고, 일정 기간 동안 인력이 필요한 경우엔 기간제(상주)를 선택해주세요.</li>
-                                </ul>
+                            <div class="btn_box">
+                                <a href="./ht-0103.html" class="btn_blue">다음</a>
                             </div>
                         </div>
     
