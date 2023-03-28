@@ -1,0 +1,865 @@
+@charset "utf-8";
+
+@import './reset.css';
+@import './common.css';
+
+/* ============================================================
+    파일정의 : style.css
+============================================================ */
+
+/* layout */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 10;
+}
+header .inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-sizing: border-box;
+}
+header > .inner {
+    justify-content: space-between;
+}
+header .logo a {
+    display: block;
+    width: 170px;
+    height: 100%;
+    background: url(../images/logo.svg) no-repeat center;
+    text-indent: -9999px;
+}
+header .inner {
+    display: flex;
+    align-items: center;
+}
+header .menu_group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+header .menu_group .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header .menu_group .menu ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header .menu_group .menu ul li {
+    height: 100%;
+}
+header .menu_group .menu ul li + li {
+    margin-left: 25px;
+}
+header .menu_group .menu ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 15px;
+}
+header .menu_group .menu ul li:hover a {
+    font-weight: 600;
+}
+header .menu_group .menu ul li.store {
+    position: relative;
+    margin-left: 40px;
+}
+header .menu_group .menu ul li.store::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -17px;
+    width: 1px;
+    height: 20px;
+    background-color: #efefef;
+    transform: translateY(-39%);
+}
+header .util_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .util_box li a {
+    display: block;
+}
+header .util_box .login a,
+header .util_box .join a {
+    font-size: 13px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: #fff;
+}
+header .util_box .login a {
+    background-color: #4476f6;
+}
+header .util_box .join a {
+    background-color: #aaa;
+}
+header .util_box .customer a,
+header .util_box .alarm a,
+header .util_box .myinfo a {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: no-repeat center;
+    background-size: auto 90%;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+header .util_box .customer a {
+    background-image: url(../images/ico/ico_customer.svg);
+}
+header .util_box .alarm a {
+    background-image: url(../images/ico/ico_alarm.svg);
+}
+header .util_box .myinfo a {
+    background-image: url(../images/ico/ico_my.svg);
+}
+header .util_box .alarm.on a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background-color: #ec4e3e;
+    border-radius: 50%;
+}
+header .allmenu_btn {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+header .allmenu_btn span {
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    border-radius: 3px;
+}
+header .allmenu_btn span + span {
+    margin-top: 6px;
+}
+/* 모바일메뉴 */
+header .allmenu_box {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100vh;
+}
+.mo_open header .allmenu_box {
+    display: block;
+}
+header .allmenu_box .allmenu_inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+header .allmenu_box .top_group {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+header .allmenu_box .top_group .logo {
+    width: 130px;
+    height: 28px;
+    background: url(../images/logo.svg) no-repeat center;
+}
+header .allmenu_box .top_group .btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+header .allmenu_box .top_group .btn .alarm {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/ico/ico_alarm.svg) no-repeat center;
+    text-indent: -9999px;
+}
+header .allmenu_box .top_group .btn .allmenu_close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+header .allmenu_box .top_group .btn .allmenu_close span {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 3px;
+}
+header .allmenu_box .top_group .btn .allmenu_close span:nth-child(1) {
+    transform: rotate(45deg);
+}
+header .allmenu_box .top_group .btn .allmenu_close span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+header .allmenu_box .top_cont {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+    background-color: #fff;
+}
+header .allmenu_box .top_cont .info {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+header .allmenu_box .top_cont .info .pic {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/content/img_default_avatar.png) no-repeat center;
+    background-size: 100%;
+    border-radius: 50%;
+}
+header .allmenu_box .top_cont .info .pic a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    width: 17px;
+    height: 17px;
+    background: #999 url(../images/ico/ico_pen.svg) no-repeat center;
+    background-size: 57%;
+    text-indent: -9999px;
+    border-radius: 50%;
+}
+header .allmenu_box .top_cont .info .txt {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+}
+header .allmenu_box .top_cont .info .txt strong {
+    font-weight: 700;
+    word-break: break-all;
+}
+header .allmenu_box .top_cont .info .txt span {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.mo_menu {
+    overflow-y: auto;
+    height: calc(100vh - 144px);
+}
+.mo_menu ul {
+    display: flex;
+    flex-direction: column;
+}
+.mo_menu ul li a {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.mo_menu ul li.project_add,
+.mo_menu ul li.profile {
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.mo_menu ul li.project_add a,
+.mo_menu ul li.profile a {
+    border-radius: 30px;
+    font-weight: 500;
+    justify-content: center;
+}
+.mo_menu dl dt {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 20px 10px 20px;
+}
+.mo_menu dl dd a {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* 서브페이지 헤더 */
+.wrap header .sub_header {
+    display: block;
+    border-top: 1px solid #efefef;
+}
+.main header .sub_header {
+    display: none;
+}
+.wrap header .sub_header .inner {
+    height: auto;
+}
+.wrap header .sub_header ul {
+    display: flex;
+    gap: 15px;
+}
+.wrap header .sub_header ul li a {
+    display: block;
+    padding: 15px 10px;
+    font-size: 14px;
+}
+.wrap header .sub_header ul li:hover a,
+.wrap header .sub_header ul li.on a {
+    font-weight: 600;
+    color: #4476f6;
+}
+
+/* container */
+.container {
+    min-height: calc(100vh - 458px);
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+}
+.main .container {
+    background-color: #fff;
+}
+
+/* 메인 */
+.main_info {
+    padding: 20px 0 20px;
+}
+.main_info .inner {
+    display: flex;
+    align-items: center;
+}
+.main_info .txt {
+    width: 50%;
+    box-sizing: border-box;
+}
+.main_info .txt strong {
+    display: block;
+    word-break: keep-all;
+    width: 360px;
+    letter-spacing: -2px;
+    line-height: 56px;
+    font-size: 48px;
+    font-weight: 500;
+}
+.main_info .txt span {
+    display: block;
+    margin-top: 20px;
+    color: #616161;
+}
+.main_info .txt a {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #4476f6;
+    padding: 15px 70px;
+    color: #fff;
+    border-radius: 40px;
+}
+.main_info .img {
+    width: 50%;
+}
+.main_info .img img {
+    display: block;
+}
+
+.project_num {
+    background-color: #efefef;
+    padding: 50px 0;
+}
+.project_num .inner {
+    display: flex;
+    justify-content: space-between;
+}
+.project_num .inner dl {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 273px;
+}
+.project_num .inner dl dt {
+    display: block;
+    width: 94px;
+    height: 78px;
+    background: no-repeat center;
+}
+.project_num .inner dl.project dt {
+    background-image: url(../images/ico/ico_main_people.svg);
+}
+.project_num .inner dl.project_cash dt {
+    background-image: url(../images/ico/ico_main_project_cash.svg);
+}
+.project_num .inner dl.project_person dt {
+    background-image: url(../images/ico/ico_main_project.svg);
+}
+.project_num .inner dl dd {
+    display: flex;
+    flex-direction: column;
+}
+.project_num .inner dl dd strong {
+    font-size: 36px;
+    font-weight: 500;
+}
+.project_num .inner dl dd strong em {
+    font-style: normal;
+}
+
+.project_category {
+    padding: 80px 0 50px;
+}
+.main_tit {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+footer .footer_link .inner {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer_link .list_link {
+    display: flex;
+    gap: 65px;
+}
+footer .footer_link .list_link dl dt a,
+footer .footer_link .list_link dl dt {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #616161;
+}
+footer .footer_link .list_link dl dt a::after {
+    content: ">";
+    margin-left: 5px;
+}
+footer .footer_link .list_link dl dd + dd {
+    margin-top: 5px;
+}
+footer .footer_link .list_link dl dd a {
+    font-size: 14px;
+    color: #616161;
+}
+footer .contect_us dl dt {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+footer .contect_us dl dd {
+    letter-spacing: 1px;
+}
+
+.footer_content {
+    padding-top: 30px;
+}
+.footer_content .inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.footer_content .logo {
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: url(../images/logo.svg) no-repeat center;
+}
+.footer_content .info * {
+    font-size: 14px;
+    font-style: normal;
+    color: #616161;
+}
+
+/* 프로젝트 등록 */
+.sub_layout.registration {
+    padding: 30px 0;
+}
+.sub_layout.registration .inner {
+    display: flex;
+    justify-content: space-between;
+}
+.sub_layout.registration .nav {}
+.sub_layout.registration .nav dl dt {
+    margin-bottom: 20px;
+}
+.sub_layout.registration .nav dl dt > a {
+    position: relative;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #4476f6;
+}
+.sub_layout.registration .nav dl dt > a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4476f6;
+    border-width: 0 2px 2px 0;
+    margin-top: -6px;
+    transform: rotate(135deg);
+}
+.sub_layout.registration .nav dl dt h2 a {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.sub_layout.registration .nav dl dd + dd {
+    margin-top: 15px;
+}
+.sub_layout.registration .nav dl dd a {
+    display: block;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.sub_layout.registration .nav dl dd.on a,
+.sub_layout.registration .nav dl dd:hover a {
+    background-color: #ddd;
+}
+.sub_layout.registration .nav dl dd ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+.sub_layout.registration .nav dl dd ul li {
+    position: relative;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #616161;
+}
+.sub_layout.registration .nav dl dd ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+}
+.sub_layout.registration .nav dl dd ul li.on::before {
+    background-color: #4476f6;
+}
+
+.sub_layout.registration .content {
+    width: calc(100% - 250px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.16);
+    box-sizing: border-box;
+}
+.sub_layout.registration .content h3 {
+    padding: 30px;
+    border-bottom: 1px solid #efefef;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sub_layout.registration .content .sub_content_box {
+    padding: 30px;
+}
+.sub_layout.registration .content .project_info_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project_info_main .info_main_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 10px);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+}
+.project_info_main .info_main_cont .img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: no-repeat center;
+}
+.project_info_main .outsourcing .img {
+    background-image: url(../images/ico/outsourcing.svg);
+}
+.project_info_main .fixed_term .img {
+    background-image: url(../images/ico/fixed_term.svg);
+}
+.project_info_main .info_main_cont strong {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.project_info_main .info_main_cont span {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.project_info_main .info_main_cont span em {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-style: normal;
+    color: #aaa;
+}
+.project_info_main .info_main_cont a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4476f6;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* 프로젝트 정보 등록 */
+.project_add {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.project_add dl dt {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.project_add dl dt span {
+    margin-left: 4px;
+    color: #ec4e3e;
+}
+.project_add dl dd.sub_tit {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #616161;
+}
+.project_add dl dd + .sub_tit {
+    margin-top: 30px;
+}
+
+/* ============================================================
+    미디어쿼리 max-width: 1200px
+============================================================ */
+
+@media screen and (max-width: 1200px) {
+    /* layout */
+    .inner {
+        width: 1000px;
+    }
+    /* header */
+    header .menu_group .menu ul li + li {
+        margin-left: 0;
+    }
+    header .menu_group .menu ul li.store {
+        margin-left: 10px;
+    }
+}
+/* ============================================================
+    미디어쿼리 max-width: 768px
+============================================================ */
+@media screen and (max-width: 768px) {
+    /* layout */
+    .inner {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* header */
+    header .allmenu_btn {
+        display: flex;
+    }
+    header .menu_group .menu {
+        display: none;
+    }
+    header .util_box {
+        display: none;
+    }
+
+    /* 메인 */
+    .main_info .inner {
+        flex-direction: column-reverse;
+    }
+    .main_info .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .main_info .txt strong {
+        width: 100%;
+        text-align: center;
+        line-height: 1.4;
+        font-size: 32px;
+    }
+    .main_info .txt span {
+        width: 100%;
+        text-align: center;
+    }
+    .main_info .img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main_tit {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project_num .inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* 서브페이지 헤더 */
+    .wrap header .sub_header {
+        display: none;
+    }
+
+    /* footer */
+    footer .footer_link .inner {
+        flex-direction: column;
+    }
+    footer .footer_link .list_link {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    footer .footer_link .list_link dl {
+        width: calc(50% - 10px);
+    }
+    footer .footer_link .list_link dl dt a,
+    footer .footer_link .list_link dl dt {
+        margin-bottom: 5px;
+    }
+    footer .footer_link .list_link dl dd + dd {
+        margin-top: 0;
+    }
+    footer .contect_us {
+        margin-top: 20px;
+    }
+    .footer_content .inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer_content .inner .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_content .inner .info * {
+        text-align: center;
+    }
+
+
+    /* 프로젝트 등록 */
+    .sub_layout.registration {
+        padding: 10px 0;
+    }
+    .sub_layout.registration .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .sub_layout.registration .content {
+        width: 100%;
+    }
+    .sub_layout.registration .nav dl {
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .sub_layout.registration .nav dl.on {
+        background-color: #fff;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,.16);
+    }
+    .sub_layout.registration .nav dl dt {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    .sub_layout.registration .nav dl dt + dd {
+        margin-top: 10px;
+    }
+    .sub_layout.registration .nav dl dt > a {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        text-indent: -9999px;
+    }
+    .sub_layout.registration .nav dl dt h2 a {
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .sub_layout.registration .nav dl dt h2 a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -22px;
+        width: 7px;
+        height: 7px;
+        border: 1px solid #aaa;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+    .sub_layout.registration .nav dl.on dt h2 a::after {
+        margin-top: -2px;
+        transform: rotate(-135deg);
+    }
+    .sub_layout.registration .nav dl dd {
+        display: none;
+    }
+    .sub_layout.registration .nav dl.on dd {
+        display: block;
+    }
+    .sub_layout.registration .nav dl dd + dd {
+        margin-top: 0;
+    }
+    .sub_layout.registration .nav dl dd a {
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .project_info_main .info_main_cont {
+        width: 100%;
+    }
+
+}

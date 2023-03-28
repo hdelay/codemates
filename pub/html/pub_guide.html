@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블가이드</title>
+
+
+    <!-- pub css -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- pub js -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="../images/favicon/favicon16.png" sizes="16x16"> 
+    <link rel="icon" href="../images/favicon/favicon32.png" sizes="32x32"> 
+    <link rel="icon" href="../images/favicon/favicon48.png" sizes="48x48"> 
+    <link rel="icon" href="../images/favicon/favicon64.png" sizes="64x64"> 
+    <link rel="icon" href="../images/favicon/favicon128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="../images/favicon/favicon144.png">
+    <link rel="shortcut icon" href="../images/favicon/favicon144.png">
+    <link rel="icon" href="../images/favicon.ico">
+    <style>
+        * {margin: 0; padding: 0;}
+        a {text-decoration: none; color: #333;}
+        ul, ol, li {list-style: none;}
+        header {
+            display: flex;
+            flex-direction: column;
+            position: sticky !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height: auto;
+        }
+        nav > ul {
+            flex-direction: row;
+        }
+        header h1 {
+            width: 100%;
+        }
+        header h1 a {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #666;
+            font-weight: 300;
+            font-size: 20px;
+            color: #fff;
+        }
+        header h1 a span {
+            display: block;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            overflow-x: inherit;
+            overflow-y: inherit;
+            background-color: #000;
+            padding-top: 0;
+        }
+        header ul {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            justify-content: center;
+        }
+        header ul li {
+            padding: 0;
+        }
+        header ul li a {
+            display: flex;
+            padding: 10px 20px;
+            white-space: nowrap;
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .item-box {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            border: 1px solid transparent;
+        }
+        .item-box > dt {
+            display: flex;
+            position: relative;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        .item-box:hover {
+            border: 1px solid #000;
+        }
+        .item-box:hover > dt::after  {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #2F86EE;
+            border-radius: 50%;
+        }
+        @media all and (max-width: 780px) {
+            header nav {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    
+    <header>
+        <h1><a href=""><span>코드메이츠</span> 퍼블리싱 가이드</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#content_01">타이포</a></li>
+                <li><a href="#content_02">버튼</a></li>
+                <li><a href="#content_03">폼 Form</a></li>
+                <li><a href="#content_04">테이블</a></li>
+                <li><a href="#content_05">페이지네이션</a></li>
+                <li><a href="#content_06">팝업</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+
+        <dl id="content_01" class="item-box">
+            <dt>타이포</dt>
+            <dd>
+                <dl class="item-content">
+                    <dt>제목</dt>
+                    <dd>
+                        
+                    </dd>
+                </dl>
+                <dl class="item-content">
+                    <dt></dt>
+                    <dd>
+                        
+                    </dd>
+                </dl>
+                <dl class="item-content">
+                    <dt>text list</dt>
+                    <dd>
+                        <div class="txt_box">
+                            <ul>
+                                <li>약속된 작업 범위의 업무를 수행하고, 정해진 기간 내 결과물을 받아야 한다면 외주(도급)를 선택해주세요.</li>
+                                <li>근무해야 하는 시간과 장소가 정해져 있고, 일정 기간 동안 인력이 필요한 경우엔 기간제(상주)를 선택해주세요.</li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+
+        <dl id="content_02" class="item-box">
+            <dt>버튼</dt>
+            <dd>
+                <dl class="item-content">
+                    <dt>텍스트버튼<br/></dt>
+                    <dd>
+                        
+                        <div class="btn_box">
+                            <a href="" class="btn_skyblue">이전</a>
+                        </div>
+                        <div class="btn_box">
+                            <a href="" class="btn_blue">다음</a>
+                        </div>
+                        <div class="btn_group justify_content">
+                            <div class="btn_box">
+                                <a href="" class="btn_skyblue">이전</a>
+                            </div>
+                            <div class="btn_box">
+                                <a href="" class="btn_blue">다음</a>
+                            </div>
+                        </div>
+                        <div class="btn_group center">
+                            <div class="btn_box">
+                                <a href="" class="btn_skyblue">이전</a>
+                            </div>
+                            <div class="btn_box">
+                                <a href="" class="btn_blue">다음</a>
+                            </div>
+                        </div>
+                        <div class="btn_group right">
+                            <div class="btn_box">
+                                <a href="" class="btn_skyblue">이전</a>
+                            </div>
+                            <div class="btn_box">
+                                <a href="" class="btn_blue">다음</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+
+        <dl id="content_03" class="item-box">
+            <dt>폼 Form<br/></dt>
+            <dd>
+                <br/>
+                체크박스
+                <br/>
+                <div class="chk_box">
+                    <span>
+                        <input type="checkbox" id="chk_01">
+                        <label for="chk_01">선택함</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="chk_02">
+                        <label for="chk_02">선택안함</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="chk_03" class="checked" disabled>
+                        <label for="chk_03">선택함(class추가 disabled)</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="chk_04" disabled>
+                        <label for="chk_04">선택안함(disabled)</label>
+                    </span>
+                </div>
+                <br/>
+                <br/>
+                라디오박스
+                <br/>
+                <div class="rdo_box">
+                    <span>
+                        <input type="radio" id="radio_01" name="rdo_group_01" checked>
+                        <label for="radio_01">선택함</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="radio_02" name="rdo_group_01">
+                        <label for="radio_02">선택안함</label>
+                    </span>
+                </div>
+                <div class="rdo_box">
+                    <span>
+                        <input type="radio" id="radio_03" name="rdo_group_01" class="checked" disabled>
+                        <label for="radio_03">선택함(class추가 disabled)</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="radio_04" name="rdo_group_01" disabled>
+                        <label for="radio_04">선택안함(disabled)</label>
+                    </span>
+                </div>
+
+                
+                <br/>
+                입력
+                <br/>
+                <div class="form_box">
+                    <div class="inp_box">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="project_add">
+                    <dl>
+                        <dt>프로젝트 제목<span>*</span></dt>
+                        <dd>
+                            <div class="form_box">
+                                <div class="inp_box">
+                                    <input type="text" placeholder="예) B2B 미디어 커머스 모바일 플랫폼 구축" />
+                                </div>
+                                <span class="txt">30자 이내로 작성해주세요.</span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>프로젝트 카테고리<span>*</span></dt>
+                        <dd class="sub_tit">해당하는 프로젝트 카테고리를 모두 선택해 주세요.</dd>
+                        <dd>
+                            <div class="chk_box">
+                                <span>
+                                    <input type="checkbox" id="chk_01">
+                                    <label for="chk_01">개발</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="chk_02">
+                                    <label for="chk_02">디자인</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" id="chk_03">
+                                    <label for="chk_03">기획</label>
+                                </span>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="form_box_group file_group">
+                                <div class="form_box file_box">
+                                    <input type="file" id="file_inp" class="file_inp">
+                                    <input type="text" class="file_txt">
+                                    <label for="file_inp">업로드</label>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="form_box min">
+                                <input type="text" id="" class="datepicker_day">
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                
+            </dd>
+        </dl>
+
+        <dl id="content_04" class="item-box">
+            <dt>테이블</dt>
+            <dd>
+                
+            </dd>
+        </dl>
+
+        <dl id="content_05" class="item-box">
+            <dt>페이지네이션</dt>
+            <dd>
+                <div class="paging_box">
+                    <ul>
+                        <li class="prev_all"><a href="" title="최신페이지로 이동"></a></li>
+                        <li class="prev"><a href="" title="이전페이지로 이동"></a></li>
+                        <li class="on"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">10</a></li>
+                        <li><a href="">100</a></li>
+                        <li><a href="">1000</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li class="next"><a href="" title="다음페이지로 이동"></a></li>
+                        <li class="next_all"><a href="" title="마지막페이지로 이동"></a></li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    
+</div>
+
+</body>
+</html>

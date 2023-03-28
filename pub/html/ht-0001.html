@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드메이츠</title>
+
+    <!-- pub css -->
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- pub js -->
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" href="../images/favicon/favicon16.png" sizes="16x16"> 
+    <link rel="icon" href="../images/favicon/favicon32.png" sizes="32x32"> 
+    <link rel="icon" href="../images/favicon/favicon48.png" sizes="48x48"> 
+    <link rel="icon" href="../images/favicon/favicon64.png" sizes="64x64"> 
+    <link rel="icon" href="../images/favicon/favicon128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="../images/favicon/favicon144.png">
+    <link rel="shortcut icon" href="../images/favicon/favicon144.png">
+    <link rel="icon" href="../images/favicon.ico">
+
+</head>
+<body>
+<div class="wrap main">
+    <!-- header -->
+    <header>
+        <div class="inner">
+            <div class="menu_group">
+                <h1 class="logo"><a href="./ht-0001.html">코드메이츠</a></h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./ht-0100.html">프로젝트 등록</a></li>
+                        <li><a href="./ht-0200.html">프로젝트 찾기</a></li>
+                        <li><a href="./ht-0300.html">파트너스 찾기</a></li>
+                        <li><a href="./ht-0400.html">이용방법</a></li>
+                        <li><a href="./ht-0500.html">이용후기</a></li>
+                        <li class="store"><a href="./ht-0501.html">스토어</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="util_box">
+                <li class="login"><a href="./ht-0002.html">로그인</a></li>
+                <li class="join"><a href="./ht-0003.html">회원가입</a></li>
+                <!-- 로그인 메뉴 
+                <li class="customer"><a href="">고객센터</a></li>
+                <li class="alarm"><a href="">알림</a></li>
+                <li class="myinfo"><a href="">내정보</a></li>
+                 -->
+            </ul>
+            <a href="" class="allmenu_btn"><span></span><span></span><span></span></a>
+            <!-- 모바일메뉴 -->
+            <div class="allmenu_box">
+                <div class="allmenu_inner">
+                    <div class="top_group">
+                        <h2 class="logo"></h2>
+                        <div class="btn">
+                            <a href="" class="alarm">알림</a>
+                            <a href="" class="allmenu_close"><span></span><span></span></a>
+                        </div>
+                    </div>
+                    <div class="top_cont"><!-- 파트너스 계정 -->
+                        <div class="info">
+                            <div class="pic"><a href="">수정</a></div>
+                            <div class="txt">
+                                <strong>Hdelay2</strong>
+                                <span>clsrnclsrn1111@naver.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="util_box">
+                        <li class="login"><a href="./ht-0002.html">로그인</a></li>
+                        <li class="join"><a href="./ht-0003.html">회원가입</a></li>
+                        <li class="my_codemates"><a href="./ht-0700.html">마이 코드메이츠</a></li><!-- 클라이언트 계정 -->
+                        <li class="client_info"><a href="">클라이언트 정보</a></li><!-- 클라이언트 계정 -->
+                        <li class="setting"><a href="">계정 설정</a></li><!-- 클라이언트 계정 -->
+                        <li class="partner_info"><a href="">파트너스 정보</a></li><!-- 파트너스 계정 -->
+                    </ul>
+                    <nav class="mo_menu">
+                        <ul>
+                            <li class="project_add"><a href="./ht-0100.html">프로젝트 등록하기</a></li><!-- 클라이언트 계정 -->
+                            <!-- <li class="profile"><a href="">내 프로필 보기</a></li> 파트너스 계정 -->
+                            <li><a href="./ht-0200.html">프로젝트 찾기</a></li>
+                            <li><a href="./ht-0400.html">이용방법</a></li>
+                        </ul>
+                        <dl>
+                            <dt>내 프로젝트</dt>
+                            <dd><a href="">검수 중</a></dd><!-- 클라이언트 계정 -->
+                            <dd><a href="">지원자 모집 중</a></dd><!-- 클라이언트 계정 -->
+                            <dd><a href="">진행 중인 프로젝트</a></dd><!-- 클라이언트 계정 -->
+                            <dd><a href="">종료된 프로젝트</a></dd><!-- 클라이언트 계정 -->
+    
+                            <dd><a href="">관심 프로젝트</a></dd><!-- 파트너스 계정 -->
+                            <dd><a href="">지원 요청</a></dd><!-- 파트너스 계정 -->
+                            <dd><a href="">지원 내역</a></dd><!-- 파트너스 계정 -->
+                            <dd><a href="">미팅</a></dd><!-- 파트너스 계정 -->
+                            <dd><a href="">진행 중인 프로젝트</a></dd><!-- 파트너스 계정 -->
+                            <dd><a href="">완료한 프로젝트</a></dd><!-- 파트너스 계정 -->
+                        </dl>
+                    </nav>
+                </div>
+            </div>
+            <!-- //모바일메뉴 -->
+        </div>
+        <div class="inner sub_header">
+            <ul>
+                <li class="on"><a href="">검수중</a></li>
+                <li><a href="">지원자 모집 중</a></li>
+                <li><a href="">진행 중인 프로젝트</a></li>
+                <li><a href="">종료된 프로젝트</a></li>
+                <li><a href="">내 프로필</a></li><!-- 파트너스 계정 -->
+                <li><a href="">관심 프로젝트</a></li><!-- 파트너스 계정 -->
+                <li><a href="">지원 요청</a></li><!-- 파트너스 계정 -->
+                <li><a href="">미팅</a></li><!-- 파트너스 계정 -->
+                <li><a href="">완료한 프로젝트</a></li><!-- 파트너스 계정 -->
+            </ul>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container">
+
+        <div class="main_info">
+            <div class="inner">
+                <div class="txt">
+                    <strong>IT 아웃소싱을 코드메이츠에서 빠르고 안전하게</strong>
+                    <span>Java, C/C++, React, Vue.js, Flutter, Python 등<br/>경험 많은 개발자를 만나보세요</span>
+                    <a href="">무료로 프로젝트 등록하기</a>
+                </div>
+                <div class="img">
+                    <img src="../images/content/img_main_info.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="project_num">
+            <div class="inner">
+                <dl class="project">
+                    <dt></dt>
+                    <dd>
+                        <strong><em class="count" data-count="49289"></em>개</strong>
+                        <span>등록된 프로젝트</span>
+                    </dd>
+                </dl>
+                <dl class="project_cash">
+                    <dt></dt>
+                    <dd>
+                        <strong><em class="count" data-count="8576"></em>억 원</strong>
+                        <span>프로젝트 등록 금액</span>
+                    </dd>
+                </dl>
+                <dl class="project_person">
+                    <dt></dt>
+                    <dd>
+                        <strong><em class="count" data-count="108051"></em>명</strong>
+                        <span>개발회사 & 프리랜서</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="project_category">
+            <div class="inner">
+                <h3 class="main_tit">다양한 카테고리의 IT 프로젝트를 등록하고 전문가를 만나보세요.</h3>
+                <div class="tab_group">
+                    <div class="tab_btn">
+                        <ul>
+                            <li class="on"><a href="" rel="tab_content_01">애플리케이션</a></li>
+                            <li><a href="" rel="tab_content_02">웹</a></li>
+                            <li><a href="" rel="tab_content_03">일반 소프트웨어</a></li>
+                            <li><a href="" rel="tab_content_04">커머스, 쇼핑몰</a></li>
+                            <li><a href="" rel="tab_content_05">임베디드</a></li>
+                            <li><a href="" rel="tab_content_06">퍼블리싱</a></li>
+                            <li><a href="" rel="tab_content_07">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_content">
+    
+                        <!-- 첫번째 탭 -->
+                        <div class="on tab_content_01">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다. 프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //첫번째 탭 -->
+    
+                        <!-- 두번째 탭 -->
+                        <div class="tab_content_02">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">2의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //두번째 탭 -->
+    
+                        <!-- 세번째 탭 -->
+                        <div class="tab_content_03">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">3의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //세번째 탭 -->
+    
+                        <!-- 네번째 탭 -->
+                        <div class="tab_content_04">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">4의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //네번째 탭 -->
+    
+                        <!-- 다섯번째 탭 -->
+                        <div class="tab_content_05">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">5의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //다섯번째 탭 -->
+    
+                        <!-- 여섯번째 탭 -->
+                        <div class="tab_content_06">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">6의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //여섯번째 탭 -->
+    
+                        <!-- 일곱번째 탭 -->
+                        <div class="tab_content_07">
+                            <div class="main_list_box">
+                                <ul>
+                                    <li>
+                                        <div class="tit"><a href="">7의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tit"><a href="">의견교환 플랫폼 리뉴얼 디자인, 개발</a></div>
+                                        <div class="info">
+                                            <span class="money">140,000,000원</span>
+                                            <span class="time">200일</span>
+                                            <span class="person">15명 지원</span>
+                                        </div>
+                                        <div class="txt">프로젝트 개요 : - 현재 운영 중인 사이트 웹개편 및 앱개발 프로젝트입니다. - 사회 경제 관련 여러 이슈에 대한 의견을 모으고 해결해 가는 곳으로 상세내용은 미팅 시 공개 가능합니다.</div>
+                                        <div class="category">
+                                            <span class="tit">외주(도급)</span>
+                                            <div class="state_box">
+                                                <span>android</span>
+                                                <span>oracle-erp</span>
+                                                <span>ios</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //일곱번째 탭 -->
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_filter"></div>
+
+        <div class="banner_join"></div>
+
+        <div class="process-guide"></div>
+
+        <div class="appeal_point"></div>
+
+        <div class="last_chance"></div>
+
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_link">
+            <div class="inner">
+                <div class="list_link">
+                    <dl>
+                        <dt>코드메이츠</dt>
+                        <dd><a href="">코드메이츠 소개</a></dd>
+                        <dd><a href="">신뢰와 안전</a></dd>
+                        <dd><a href="">이용약관</a></dd>
+                        <dd><a href="">개인정보 처리방침</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">고객센터</a></dt>
+                        <dd><a href="">클라이언트 고객센터</a></dd>
+                        <dd><a href="">파트너스 고객센터</a></dd>
+                        <dd><a href="">이용요금</a></dd>
+                        <dd><a href="">클라이언트 이용방법</a></dd>
+                        <dd><a href="">파트너스 이용방법</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">뉴스센터</a></dt>
+                        <dd><a href="">공지사항</a></dd>
+                        <dd><a href="">코드메이츠 소식</a></dd>
+                        <dd><a href="">코드메이츠 이용 팁</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">이용후기</a></dt>
+                        <dt><a href="">코드메이츠 스토어</a></dt>
+                    </dl>
+                </div>
+                <div class="contect_us">
+                    <dl>
+                        <dt>CONTACT US</dt>
+                        <dd>02-597-0785(09:00-18:00, 공휴일 제외)</dd>
+                        <dd>schb1130@ai-max.co.kr</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="footer_content">
+            <div class="inner">
+                <div class="logo"></div>
+                <div class="info">
+                    <span>에이아이맥스(주)</span>
+                    <address>서울특별시 금천구 가산디지털2로 98, 1동 513호(가산동, 롯데아이티캐슬)</address>
+                    <span>© 2023 Codemates Corp.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+
+</body>
+</html>
